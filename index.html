@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Tau</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="toggle-theme" onclick="toggleTheme()">
+    <img id="theme-icon" src="img/icon2.png" alt="Тема" />
+  </button>
+
+  <div class="burger" onclick="toggleMobileNav()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav">
+    <a href="#services">Услуги</a>
+    <a href="#advantages">Преимущества</a>
+    <a href="#contacts">Контакты</a>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services">Услуги</a>
+    <a href="#advantages">Преимущества</a>
+    <a href="#contacts">Контакты</a>
+  </div>
+
+  <div class="hero">
+    <img src="img/logo.jpg" alt="Mobile Tau logo" class="profile">
+    <h1>Mobile Tau</h1>
+    <p>Телефоны, аксессуары, ремонт — по самым выгодным ценам!</p>
+    <p>⏱ 10:00–22:00 ежедневно | 📍 Астана, пр. Аль-Фараби, 9</p>
+  </div>
+
+  <section id="services">
+    <h2>Наши услуги</h2>
+    <ul>
+      <li>Продажа смартфонов: iPhone, Samsung, Xiaomi</li>
+      <li>Профессиональный ремонт телефонов</li>
+      <li>Аксессуары: зарядки, чехлы, стекла</li>
+      <li>Рассрочка: Kaspi 0-0-12, Red 0-0-3</li>
+    </ul>
+  </section>
+
+  <section id="advantages">
+    <h2>Наши преимущества</h2>
+    <ul>
+      <li>Низкие и честные цены</li>
+      <li>Скорость и качество ремонта</li>
+      <li>Гарантия на услуги</li>
+      <li>3 удобные точки в Астане</li>
+    </ul>
+  </section>
+
+  <section id="reviews" onclick="toggleReviews()" style="cursor: pointer;">
+    <h2>Отзывы клиентов</h2>
+    <p>Нам очень важно ваше мнение ☺️</p>
+    <p>🠋 Посматреть отзывы 🠋</p>
+    <div id="reviewList" style="display: none;">
+      <div class="review">
+        <p><strong>E_r_e_k_e</strong> ⭐⭐⭐⭐⭐</p>
+        <p>Сервиске рахмет өте сапалы және өте жылдам жасап берді телефонды барлығыңызға кеңес берем, барлығыңыздар өкінбейсіздер!</p>
+      </div>
+      <div class="review">
+        <p><strong>01 01</strong> ⭐⭐⭐⭐⭐</p>
+        <p>Сделали экран за 10мин качественно, Саудасы бар тема ребята, благодарю 👍</p>
+      </div>
+      <div class="review">
+        <p><strong>Даулет Оразалиев</strong> ⭐⭐⭐⭐⭐</p>
+        <p>Отличный сервис, мужик в магазине грамотный, почистили телефон от грязи и подобрали нужный зарядник за несколько минут</p>
+      </div>
+      <div class="review">
+        <p><strong>Александр Шувалов</strong> ⭐⭐⭐⭐⭐</p>
+        <p>Магазин супер, все быстро: позвонил — приготовили, забрал 👍👍👍<br>Удачи в продажах 🙏</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contacts">
+    <h2>Контакты</h2>
+    <p>📱 WhatsApp: <a href="https://wa.clck.bar/77475028888" target="_blank">написать</a></p>
+    <p>📍 Адреса:</p>
+    <ul>
+      <li>
+        <a href="https://go.2gis.com/ObdVZ" target="_blank">
+          📍 Аль-Фараби проспект, 9 (2 этаж)
+        </a>
+      </li>
+      <li>
+        <a href="https://go.2gis.com/YyuSC" target="_blank">
+          📍 Проспект Абылай хана, 29 (цокольный этаж, бутик 19/27)
+        </a>
+      </li>
+      <li>
+        <a href="https://go.2gis.com/dWzQy" target="_blank">
+          📍 Ул. Санжара Асфендиярова, 3 (2 этаж)
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <script src="js.js"></script>
+</body>
+</html>
