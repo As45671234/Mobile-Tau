@@ -43,11 +43,11 @@ body.light {
   transition: background 0.3s;
 }
 body.light .hero {
-  background: #d2f2e2;
+  background: rgb(0, 81, 55);
 }
 .hero img.profile {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 4px solid #00ffae;
   box-shadow: 0 0 30px #00ffaeaa;
@@ -64,7 +64,7 @@ body.light .hero {
 }
 body.light .hero h1,
 body.light .hero p {
-  color: #222;
+  color: #ffffff;
 }
 .nav {
   position: fixed;
@@ -83,6 +83,9 @@ body.light .hero p {
   background: rgba(0, 0, 0, 0.355); 
   transition: transform 0.2s ease, background 0.3s;
   font-size: 1rem;
+}
+body.light .nav a{
+  color :#ffffff;
 }
 .nav a:hover {
   background: #00ffae;
@@ -141,7 +144,7 @@ section {
   margin: 3rem auto;
   padding: 2rem;
   background: rgba(13, 59, 46, 0.8);
-  border-left: 6px solid #00ffae;
+  border-left: 6px solid rgba(0, 100, 68, 0.785);
   border-radius: 16px;
   box-shadow: 0 0 30px #00ffaa66;
   transition: background 0.3s, color 0.3s;
@@ -178,11 +181,35 @@ a {
   color: #00ffae;
 }
 body.light a{
-  color:#3dff81;
+  color:rgba(0, 100, 68, 0.785);
 }
 a:hover {
   color: #000000;
 }
+.service-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.service-slider::-webkit-scrollbar {
+  display: none;
+}
+.service-card {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 100, 68, 0.785);
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 0 15px rgba(0, 255, 174, 0.2);
+  transition: transform 0.2s;
+}
+.service-card:hover {
+  transform: scale(1.02);
+}
+
 .review {
   background: rgba(255, 255, 255, 0.05);
   padding: 1rem 1.5rem;
@@ -197,6 +224,32 @@ a:hover {
   box-shadow: 0 0 20px rgba(0, 255, 174, 0.35);
 }
 .review p {
+  margin: 0.3rem 0;
+}
+.review-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.review-slider::-webkit-scrollbar {
+  display: none;
+}
+.review-card {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 100, 68, 0.785);
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 0 15px rgba(0, 255, 174, 0.2);
+  transition: transform 0.2s;
+}
+.review-card:hover {
+  transform: scale(1.02);
+}
+.review-card p {
   margin: 0.3rem 0;
 }
 
